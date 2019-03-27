@@ -2,6 +2,8 @@
     box-sizing: border-box;
 }
 body{
+    margin: 0;
+    padding: 0;
     font-size: 14px;
     background-color: #fff;
 }
@@ -10,17 +12,34 @@ a,a:hover,a:active,a:visited{
     text-decoration: none;
 }
 
-
+@font-face{
+    font-family:futura;
+    src:url('../assets/fonts/Roboto-Light.ttf');
+}
 .page-section{
     width: 1020px;
     margin: auto;
 }
+.page-section.header,.page-section.footer{
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+.page-section.header{
+    top: 0;
+}
+.page-section.footer{
+    bottom: 0;
+}
+.page-section.header+.page-section{
+    padding-top: 72px;
+}
 .section-header{
     padding: 42px 0 40px;
-    color: #303133;
+    color: #666;
     font-size: 34px;
     line-height: 1;
-    border-bottom: 1px solid #EBEEF5;
+    font-family: futura;
 }
 .section-body + .section-footer{
     margin-top: 40px;
@@ -55,7 +74,6 @@ a,a:hover,a:active,a:visited{
     height: 48px;
     text-align: left;
     background-color: #fff;
-    border: 1px solid #DCDFE6;
 }
 .item-box-inner-part{
     display: table-cell;
@@ -68,13 +86,21 @@ a,a:hover,a:active,a:visited{
     background-color: #DCDFE6;
     border-right: 1px solid #DCDFE6;
 }
+.item-box-inner-part.logo.has-img{
+    background-color: transparent;
+    border-color: transparent;
+}
+.item-box-inner-part.logo img{
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
 .item-box-inner-part.description{
     height: 100%;
     text-align: center;
     vertical-align: middle;
 }
 .section-footer{
-    border-top: 1px solid #EBEEF5;
     padding: 40px 0 20px;
-    color: #303133;
+    color: #666;
 }

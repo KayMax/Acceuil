@@ -7,13 +7,15 @@
 </head>
 <body>
 <div id="app">
-    <section class="page-section">
+    <section class="page-section header">
         <section-header></section-header>
-
+    </section>
+    <section class="page-section">
         <div class="section-body">
             <page-lists></page-lists>
         </div>
-
+    </section>
+    <section class="page-section footer">
         <section-footer></section-footer>
     </section>
 </div>
@@ -23,7 +25,6 @@
     var app = new Vue({
         el: '#app',
         data: {
-            message: 'Hello Vue!'
         }
     })
 </script>

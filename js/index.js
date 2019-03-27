@@ -2,7 +2,7 @@ Vue.component('section-header', {
     template: '<div class="section-header"><span>{{ title }}</span></div>',
     data: function () {
         return {
-            title: 'WANG CHAO'
+            title: 'CHAO WANG'
         }
     }
 });
@@ -11,7 +11,7 @@ Vue.component('page-lists', {
         '<div class="page-lists-item" v-for="(item,key) in page_list" :key="key" :class="{\'no-margin\':key%6==0}">' +
         '<a class="item-box" :href="item.href" target="_blank">' +
         '<div class="item-box-inner">' +
-        '<span class="item-box-inner-part logo"></span>' +
+        '<span class="item-box-inner-part logo" :class="{\'has-img\': item.icon}"><img :src="item.icon"></span>' +
         '<span class="item-box-inner-part description"><span>{{ item.name }}</span></span>' +
         '</div>' +
         '</a>' +
@@ -21,92 +21,92 @@ Vue.component('page-lists', {
         return {
             page_list: [{
                 name: "Pissenlit",
-                icon: "",
+                icon: "./assets/images/01.gif",
                 des: "",
                 href: "https://kaymax.github.io/pissenlit/",
             },{
                 name: "En boucle",
-                icon: "",
+                icon: "./assets/images/01.gif",
                 des: "",
                 href: "https://kaymax.github.io/En-boucle/",
             },{
                 name: "notitle",
-                icon: "",
+                icon: "./assets/images/01.gif",
                 des: "",
                 href: "https://google.com",
             },{
                 name: "notitle",
-                icon: "",
+                icon: "./assets/images/01.gif",
                 des: "",
                 href: "https://google.com",
             },{
                 name: "notitle",
-                icon: "",
+                icon: "./assets/images/01.gif",
                 des: "",
                 href: "https://google.com",
             },{
                 name: "notitle",
-                icon: "",
+                icon: "./assets/images/01.gif",
                 des: "",
                 href: "https://google.com",
             },{
                 name: "notitle",
-                icon: "",
+                icon: "./assets/images/01.gif",
                 des: "",
                 href: "https://google.com",
             },{
                 name: "notitle",
-                icon: "",
+                icon: "./assets/images/01.gif",
                 des: "",
                 href: "https://google.com",
             },{
                 name: "notitle",
-                icon: "",
+                icon: "./assets/images/01.gif",
                 des: "",
                 href: "https://google.com",
             },{
                 name: "notitle",
-                icon: "",
+                icon: "./assets/images/01.gif",
                 des: "",
                 href: "https://google.com",
             },{
                 name: "notitle",
-                icon: "",
+                icon: "./assets/images/01.gif",
                 des: "",
                 href: "https://google.com",
             },{
                 name: "notitle",
-                icon: "",
+                icon: "./assets/images/01.gif",
                 des: "",
                 href: "https://google.com",
             },{
                 name: "notitle",
-                icon: "",
+                icon: "./assets/images/01.gif",
                 des: "",
                 href: "https://google.com",
             },{
                 name: "notitle",
-                icon: "",
+                icon: "./assets/images/01.gif",
                 des: "",
                 href: "https://google.com",
             },{
                 name: "notitle",
-                icon: "",
+                icon: "./assets/images/01.gif",
+                des: "./assets/images/01.gif",
+                href: "https://google.com",
+            },{
+                name: "notitle",
+                icon: "./assets/images/01.gif",
+                des: "./assets/images/01.gif",
+                href: "https://google.com",
+            },{
+                name: "notitle",
+                icon: "./assets/images/01.gif",
                 des: "",
                 href: "https://google.com",
             },{
                 name: "notitle",
-                icon: "",
-                des: "",
-                href: "https://google.com",
-            },{
-                name: "notitle",
-                icon: "",
-                des: "",
-                href: "https://google.com",
-            },{
-                name: "notitle",
-                icon: "",
+                icon: "./assets/images/01.gif",
                 des: "",
                 href: "https://google.com",
             }]
