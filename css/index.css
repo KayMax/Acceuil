@@ -32,12 +32,12 @@ a,a:hover,a:active,a:visited{
     bottom: 0;
 }
 .page-section.header+.page-section{
-    padding-top: 72px;
+    padding-top: 66px;
 }
 .section-header{
     padding: 42px 0 40px;
     color: #666;
-    font-size: 34px;
+    font-size: 26px;
     line-height: 1;
     font-family: futura;
 }
